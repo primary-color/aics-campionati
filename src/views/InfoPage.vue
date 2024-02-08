@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import PageTemplate from "@/components/layout/PageTemplate.vue";
 import PageHeader from "@/components/PageHeader.vue";
-const image = "assets/logo_aicslucca.png";
+const image = "logo_aicslucca.png";
 import { useStore } from "@/store/main";
 import { storeToRefs } from "pinia";
 import router from "@/router";

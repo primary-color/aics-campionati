@@ -10,8 +10,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import router from "@/router";
-const image = "assets/logo_aicslucca.png";
-const imageBg = "assets/Group.png";
+const image = "logo_aicslucca.png";
 
 onMounted(() => {
   setTimeout(() => {

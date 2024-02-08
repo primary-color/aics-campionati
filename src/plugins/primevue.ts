@@ -40,6 +40,7 @@ import InputSwitch from "primevue/inputswitch";
 import InputText from "primevue/inputtext";
 import IconField from "primevue/iconfield";
 import InputIcon from "primevue/inputicon";
+import Image from "primevue/image";
 import Knob from "primevue/knob";
 import Menu from "primevue/menu";
 import Message from "primevue/message";
@@ -109,6 +110,7 @@ export default {
     app.component("InputText", InputText);
     app.component("IconField", IconField);
     app.component("InputIcon", InputIcon);
+    app.component("Image", Image);
     app.component("Knob", Knob);
     app.component("Menu", Menu);
     app.component("Message", Message);
