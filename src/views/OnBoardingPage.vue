@@ -11,11 +11,12 @@
 import { onMounted } from "vue";
 import router from "@/router";
 const image = "logo_aicslucca.png";
+import { useStore } from "@/store/main";
+const mainStore = useStore();
 
-onMounted(() => {
-  setTimeout(() => {
-    router.push({ name: "TournamentsPage" });
-  }, 3000);
+onMounted(async () => {
+  await mainStore.fecthTournaments();
+  router.push({ name: "TournamentsPage" });
 });
 </script>
 
