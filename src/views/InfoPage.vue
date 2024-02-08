@@ -7,7 +7,7 @@
       <Card class="mb-4">
         <template #content>
           <div class="flex flex-column align-items-center justify-content-center p-4">
-            <Image :src="image" alt="logo" style="width: 65%" class="mb-6" />
+            <img :src="image" style="width: 65%" class="mb-4" />
             <div class="text-xl font-bold text-color-secondary">Versione App: {{ appVersion }}</div>
           </div>
         </template>
