@@ -21,7 +21,7 @@ interface IState {
 export const useStore = defineStore({
   id: "store",
   state: (): IState => ({
-    appVersion: "0.0.3",
+    appVersion: "0.1.2",
 
     longLoadingID: null,
     longLoading: false,

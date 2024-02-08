@@ -1,10 +1,14 @@
 <template>
   <div class="flex flex-column h-full p-4">
     <div class="surface-border border-bottom-1 pb-4 mb-4">
-      <span class="p-input-icon-left w-full mb-4">
-        <i class="pi pi-search" />
-        <InputText v-model="searchTerm" placeholder="Es: Amatori/dilettanti..." class="w-full" />
-      </span>
+      <div class="mb-4">
+        <IconField iconPosition="left">
+          <InputIcon>
+            <i class="pi pi-search" />
+          </InputIcon>
+          <InputText v-model="searchTerm" placeholder="Es: Amatori/dilettanti..." class="w-full" />
+        </IconField>
+      </div>
       <Dropdown v-model="selectedCategory" :options="categories" placeholder="" />
     </div>
 
