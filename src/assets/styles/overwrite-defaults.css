@@ -1,0 +1,25 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    height: 100%;
+    font-size: 0.8rem;
+}
+
+body {
+    height: 100%;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: 0px;
+    background-color: var(--surface-ground);
+}
+
+#app {
+    height: 100%;
+}
+
+*:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
