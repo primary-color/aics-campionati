@@ -13,14 +13,14 @@
         header="Squadra"
         style="width: 180px; max-width: 180px"
         class="white-space-nowrap overflow-x-hidden text-overflow-ellipsis"></Column>
-      <Column field="points" sortable header="PT" class="font-bold"></Column>
-      <Column field="matches" sortable header="G"></Column>
-      <Column field="won_matches" sortable header="V"></Column>
-      <Column field="drawn_matches" sortable header="PA"></Column>
-      <Column field="lost_matches" sortable header="PE"></Column>
-      <Column field="goals_scored" sortable header="GF"></Column>
-      <Column field="goals_conceded" sortable header="GS"></Column>
-      <Column field="fair_play" sortable header="CD"></Column>
+      <Column field="points" sortable header="PT" class="font-bold" dataType="numeric"></Column>
+      <Column field="matches" sortable header="G" dataType="numeric"></Column>
+      <Column field="won_matches" sortable header="V" dataType="numeric"></Column>
+      <Column field="drawn_matches" sortable header="PA" dataType="numeric"></Column>
+      <Column field="lost_matches" sortable header="PE" dataType="numeric"></Column>
+      <Column field="goals_scored" sortable header="GF" dataType="numeric"></Column>
+      <Column field="goals_conceded" sortable header="GS" dataType="numeric"></Column>
+      <Column field="fair_play" sortable header="CD" dataType="numeric"></Column>
     </DataTable>
   </div>
   <div class="grid ml-1" v-for="(value, key) in standingsLegend" :key="key">

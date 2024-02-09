@@ -5,14 +5,14 @@
         {{ index + 1 }}
       </template>
     </Column>
-    <Column sortable header="Nome" class="white-space-nowrap" style="max-width: 20rem">
+    <Column header="Nome" class="white-space-nowrap" style="max-width: 20rem">
       <template #body="{ data }">
         {{ `${data.firstName} ${data.lastName}` }}
       </template>
     </Column>
-    <Column field="goal" sortable header="G" class="font-bold"></Column>
-    <Column field="team" sortable header="Squadra" style="max-width: 20rem" class="white-space-nowrap overflow-x-hidden text-overflow-ellipsis"></Column>
-    <Column field="warningsCount" sortable header="W" class="font-bold"> </Column>
+    <Column field="goal" header="G" class="font-bold" dataType="numeric"></Column>
+    <Column field="team" header="Squadra" style="max-width: 20rem" class="white-space-nowrap overflow-x-hidden text-overflow-ellipsis"></Column>
+    <Column field="warningsCount" header="W" class="font-bold" dataType="numeric"> </Column>
   </DataTable>
 </template>
 <script lang="ts" setup>
