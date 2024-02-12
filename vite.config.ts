@@ -15,7 +15,7 @@ export default defineConfig({
         enabled: true,
       },
       injectRegister: "auto",
-      includeAssets: ["futbol-regular.ico", "pwa-assets/ios/180.png"],
+      includeAssets: ["futbol-regular-2.ico", "pwa-assets/ios/180.png"],
       manifest: {
         name: "Aics Lucca - campionati",
         short_name: "AicsL",
