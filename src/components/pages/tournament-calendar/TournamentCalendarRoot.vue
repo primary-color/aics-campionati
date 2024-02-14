@@ -8,12 +8,17 @@
         optionLabel="label"
         placeholder="Seleziona una giornata"
         class="m-3" />
-      <BlockUI :blocked="isFetchingData" :pt="{ mask: { class: 'border-noround' } }">
+      <div class="relative">
+        <div class="absolute w-full h-full bg-black-alpha-20" v-if="isFetchingData">
+          <div class="flex flex-column align-items-center justify-content-center h-full">
+            <ProgressSpinner style="width: 50px; height: 50px" strokeWidth="4" />
+          </div>
+        </div>
         <div class="p-4 surface-card">
           <div class="text-2xl font-bold text-color border-bottom-1 surface-border pb-4 mb-4">Calendario giornata {{ selectedWeek?.week }}</div>
           <MatchItem v-for="(match, idx) in getTournamentCalendarValues" :match="match" :key="idx" class="pb-4 mb-4 surface-border border-bottom-1" />
         </div>
-      </BlockUI>
+      </div>
     </div>
   </div>
 </template>
