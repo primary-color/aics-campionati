@@ -5,11 +5,18 @@ import vue from "@vitejs/plugin-vue";
 
 import { VitePWA } from "vite-plugin-pwa";
 
-console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+import dotenv from "dotenv";
 
-const name = process.env.NODE_ENV === "development" ? "Aics Lucca - campionati (beta)" : "Aics Lucca - campionati ";
-const short_name = process.env.NODE_ENV === "development" ? "AicsL (beta)" : "AicsL";
-const theme_color = process.env.NODE_ENV === "development" ? "#ff0000" : "#ffffff";
+// Carica le variabili d'ambiente dal file .env
+dotenv.config();
+
+const IS_BETA = Boolean(process.env.IS_BETA);
+
+console.log("IS_BETA", IS_BETA);
+
+const name = IS_BETA ? "Aics Lucca - campionati (beta)" : "Aics Lucca - campionati ";
+const short_name = IS_BETA ? "AicsL (beta)" : "AicsL";
+const theme_color = IS_BETA ? "#ff0000" : "#ffffff";
 
 // https://vitejs.dev/config/
 export default defineConfig({
