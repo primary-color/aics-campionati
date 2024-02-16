@@ -20,3 +20,9 @@ Enter in dev mode
 ```sh
 yarn dev
 ```
+
+# PWA assets
+
+See [PWA Vite Plugin](https://vite-pwa-org.netlify.app/) and see [PWA assets generator](https://vite-pwa-org.netlify.app/assets-generator/).
+
+To change all assets, use [PWA builder](https://www.pwabuilder.com/imageGenerator) the put the icons under `public/pwa-assets`
