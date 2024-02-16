@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-import PrimeVue from "primevue/config";
 import App from "./App.vue";
 import router from "./router";
-import PrimeVueImporter from "./plugins/primevue";
+import PrimeVue from "./plugins/primevue";
+import { Icon } from "@iconify/vue";
 
 import "./assets/styles/index.css";
 
@@ -60,7 +60,8 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.component("font-awesome-icon", FontAwesomeIcon);
+app.component("Iconify", Icon);
 app.use(router);
-app.use(PrimeVue, { ripple: true });
-app.use(PrimeVueImporter);
+app.use(PrimeVue);
+
 app.mount("#app");

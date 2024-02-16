@@ -7,6 +7,8 @@ import "@/assets/primevue/themes/lara/lara-light/blue/theme.scss";
 
 import type { App } from "vue";
 
+import PrimeVue from "primevue/config";
+
 /*****************************************************************************/
 /* PRIME VUE - IMPORT COMPONENTS */
 /*****************************************************************************/
@@ -77,6 +79,8 @@ import ToastService from "primevue/toastservice";
 
 export default {
   install(app: App) {
+    app.use(PrimeVue, { ripple: true });
+
     /*****************************************************************************/
     /* PRIME VUE - COMPONENTS */
     /*****************************************************************************/

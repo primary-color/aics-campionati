@@ -8,8 +8,7 @@
     "preview": "vite preview",
     "start": "vite",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.svg"
+    "build-storybook": "storybook build"
   },
   "type": "module",
   "dependencies": {
@@ -27,6 +26,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.1.1",
     "@storybook/addon-essentials": "^7.6.13",
     "@storybook/addon-interactions": "^7.6.13",
     "@storybook/addon-links": "^7.6.13",
