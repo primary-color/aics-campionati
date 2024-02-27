@@ -12,7 +12,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 //load IS_BETA env variables
-const IS_BETA = Boolean(process.env.IS_BETA);
+const IS_BETA = process.env.IS_BETA === 'true'
 console.log("IS_BETA", IS_BETA);
 
 //vitePwaOptions variables
